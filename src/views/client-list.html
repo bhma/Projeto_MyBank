@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/client-list.css">
+    <title>My Bank - Lista de Clientes</title>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <h1>Lista de Clientes</h1>
+        </div>
+        <div id="content">
+            <form id="create-client" action="/searchClient" method="GET">
+                <fieldset>
+                    <div class="input-block">
+                        <label for="name">Nome Completo:</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="input-block">
+                        <label for="cpf">CPF:</label>
+                        <input type="text" name="cpf" id="cpf" required>
+                    </div>
+                    <div id="btn">
+                        <button type="" form="create-client"> Buscar </button>
+                    </div>
+                </fieldset>
+            </form>  
+        </div>
+        <div id="container">
+            <ul>
+
+                {% if clientList.length == 0 %}
+                    <li>
+                        <p>Nenhum Cliente Econtrado.</p>
+                    </li>
+                {% else %}
+                    {% for client in clientList %}
+                        <li>
+                            <a href="#" class="card-client">
+                                <p>Nome: {{client.name}}</p>
+                                <p>Email: {{client.email}}</p>
+                            </a>
+                        </li>
+                    {% endfor %}
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

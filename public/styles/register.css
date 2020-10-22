@@ -1,0 +1,53 @@
+#main #content{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main #content #create-client{
+    width: 60%;
+}
+
+#main #content #create-client fieldset{
+    border: none;
+}
+
+#main #content #create-client fieldset legend{
+    font-size: 2rem;
+    padding: 2rem 0rem;
+}
+
+#main #content #create-client fieldset .input-block input{
+    display: block;
+    width: 100%;
+    height: 2rem;
+    margin-top: .4rem;
+    padding: 0rem .7rem;
+    border: 1px solid  #9AC0CD;
+    border-radius: .3rem;
+    background-color: #F8F8FF;
+} 
+
+#main #content #create-client fieldset .input-block+.input-block{
+    margin-top: 10px;
+}
+
+#main #content #btn{
+    margin-top: 20px;
+    width: 60%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+#main #content #btn button{
+    width: 100%;
+    height: 100%;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: .3rem;
+    color: #1C1C1C;
+    background-color: #00BFFF;
+}
