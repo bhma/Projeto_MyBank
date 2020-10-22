@@ -1,0 +1,11 @@
+{
+  "nextId": 2,
+  "clientList": [
+    {
+      "id": 1,
+      "name": "Bruno Andrade",
+      "email": "bruno@email.com",
+      "cpf": "1111"
+    }
+  ]
+}
